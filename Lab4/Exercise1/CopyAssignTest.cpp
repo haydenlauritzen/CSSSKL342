@@ -6,7 +6,7 @@
  */
 
 #include <iostream>
-#include "MyClass.h"
+#include "MySubClass.h"
 
 using namespace std;
 
@@ -54,6 +54,16 @@ int main(int argc, char** argv)
     cout << "m2 values; last should be different:" << endl;
     cout << '\t' << m2.getD() << ", " << m2.getI() << ", " << m2.getS() 
          << ", " << m2.getIp() << endl;
+
+    MySubClass sc1, sc2;
+
+    sc1.setSubClassData(2);
+    sc2.setSubClassData(5);
+
+    cout << "sc1 values:" << endl;
+    cout << sc1.getSubClassData() << endl;
+    cout << "sc2 values:" << endl;
+    cout << sc2.getSubClassData() << endl;
 
     return 0;
 }

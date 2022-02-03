@@ -1,0 +1,9 @@
+1. MyClass::operator=() is performing a deep copy by
+copying all the class variables over from the passed in object 
+instead of making a pointer to the passed in object.
+
+2. Valgrind identifies a memory leak. This can be fixed 
+by correctly clearing the previous pointer when assigning a 
+new one after the copy method.
+
+ 

@@ -26,7 +26,8 @@ MyClass& MyClass::operator=(const MyClass& rhs)
 {
     // we have seen this before: a = a is a legal assignment, and shouldn't do anything
     if (this != &rhs) {
-      copy(rhs);
+        clear();
+        copy(rhs);
     }
     return *this;
 }
@@ -52,6 +53,9 @@ void MyClass::setS(string newS)
 }
 
 void MyClass::setIp(int newIp)
+// takes in a new int value and points the pointer at it.
+// should be implemented correctly if the goal 
+// is to change the value of the pointer not the pointer itself
 {
     *ip = newIp;
 }
@@ -92,7 +96,7 @@ void MyClass::clear()
     i = 0;
     d = 0.0;
     s = "";
-
+    
     assert(ip != nullptr);
     *ip = 0;
     delete ip;

@@ -1,0 +1,15 @@
+1. IteratorTest.cpp iterates through the SquareContainer 
+by using an iterator. In order to compile, you cannot include the 
+SquareContainer2.cpp as it is already included in the header.
+
+2. The iterator operators return an iterator so they can 
+continue making operations. There are two increment operator
+overloads, one for prefix increment and one for postfix increment.
+The iterator the function returns is the object 
+
+3. Setting the method to a const method declares that, 
+that method should not be changing any class variables, 
+otherwise it will throw an error. This consistant with the implementation 
+of the operator* function as it declares a new container to make operations on
+and returns that new container. This function should be a const function, if it was
+a operator*= then the method should not be a const as it would be modifying class variables.
