@@ -1,0 +1,2 @@
+1. Three classes such that A is inherited by B which is inherited by C.
+2. The constuctor for A is called, then B, then C; destructors are called in revserse order.
