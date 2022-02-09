@@ -5,37 +5,45 @@
 
 using namespace std;
 
+template <typename T>
+void findLimits(const T& val) {
+    cout << "MAX: " << numeric_limits<T>::max() << endl;
+    cout << "MIN: " << numeric_limits<T>::min() << endl;
+    cout << endl;
+}
+
 int main() {
 
-    int a = -1;
-    unsigned int b = 3;
-    long c = 7*(pow(10, 6));
-    double d = 1/3;
-    float e = 12345.6789;
+    int i = -1;
+    unsigned int ui = 3;
+    long l = 7*(pow(10, 6));
+    long long ll = 7*(pow(10, 16));
+    double d = 1.0/3.0;
+    float f = 12345.6789;
 
-    cout << "INT a: " << a << endl;
-    cout << "INT_MAX: " << INT_MAX << endl;
-    cout << "INT_MIN: " << INT_MIN << endl;
+
+    cout << "INT a: " << i << endl;
+    findLimits(i);
     cout << endl;
 
-    cout << "UNSIGNED INT b: " << b << endl;
-    cout << "INT_MAX: " << UINT_MAX << endl;
-    cout << "INT_MIN: " << numeric_limits<unsigned int>::min() << endl;
+    cout << "UNSIGNED INT ui: " << ui << endl;
+    findLimits(ui);
     cout << endl;
 
-    cout << "LONG c: " << c << endl;
-    cout << "LONG_MAX: " << LONG_MAX << endl;
-    cout << "LONG_MIN: " << LONG_MIN << endl;
+    cout << "LONG l: " << l << endl;
+    findLimits(l);
+    cout << endl;
+
+    cout << "LONG LONG ll: " << ll << endl;
+    findLimits(ll);
     cout << endl;
 
     cout << "DOUBLE d: " << d << endl;
-    cout << "DOUBLE_MAX: " << __DBL_MAX__ << endl;
-    cout << "DOUBLE_MIN: " << __DBL_MIN__ << endl;
+    findLimits(d);
     cout << endl;
 
-    cout << "FLOAT e: " << e << endl;
-    cout << "FLOAT_MAX" << __FLT_MAX__ << endl;
-    cout << "FLOAT_MIN" << __FLT_MIN__ << endl;
+    cout << "FLOAT f: " << f << endl;
+    findLimits(f);
     cout << endl;
 
 }
