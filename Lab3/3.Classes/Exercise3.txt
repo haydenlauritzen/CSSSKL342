@@ -1,0 +1,2 @@
+1. There is no problem, the code compiles without modifications.
+2. We need an assignment overload so that we can correctly initalize and assign all class variables.

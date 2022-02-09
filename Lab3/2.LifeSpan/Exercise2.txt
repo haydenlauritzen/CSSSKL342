@@ -1,0 +1,5 @@
+1. int a = var.theValue(); --> int a = (an const int reference) --> works because all we're doing is assigning a int reference to an int. 
+2.
+int b;
+var.theValue(); = b; --> (const int reference) = b --> does not work because we cannot change the const reference.
+if we remove const from theValue(); the above is allowed.

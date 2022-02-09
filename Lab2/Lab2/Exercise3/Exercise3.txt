@@ -1,0 +1,4 @@
+1. valgrind is a memory leak detection program, initalally running the program doesn't find any memory leaks in the heap. 
+After commenting out a delete, it finds a definitive memory leak.
+2. Using the new keyword signals that the variable is stored on the heap, and is dynamically allocated. 
+It is good practice to set dynamically allocated memory to null/nullptr after deleting them.

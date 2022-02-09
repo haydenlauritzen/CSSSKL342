@@ -1,0 +1,3 @@
+1. I didn't encounter any problems between each of the files writing and compiling in a unix environment, but looking into how Windows/DOS, Max, and Linux/Unix 
+store new line characters in ASCII I can see how there can be issues if the differences between the operating systems aren't accounted for. Using the "od -a" command
+displays all the differences between the three files, which appear to have all remained intact after downloading the files on Windows and exporting them to Ubuntu.

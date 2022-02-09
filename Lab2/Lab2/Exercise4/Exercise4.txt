@@ -1,0 +1,4 @@
+1. Arrays in C++ are primitive and are unaware of their size, 
+you can allocate a specific amount of memory, but the only way to be aware of it's size is by storing the length as a variable, usually as a constant.
+2. Passing by pointer saves memory by not requiring a new array to be declared in the stack, and is slightly more memory efficient. 
+3. It is good practice to set pointers to null after deleting them to avoid unexpected outcomes such as attempting to dereference a pointer that has been deleted.
